@@ -1,6 +1,7 @@
+import HeroVideoDialog from '@/components/magicui/hero-video-dialog'
 import { Button } from '@/components/ui/button'
 import { Textarea } from '@/components/ui/textarea'
-import { Gem, Globe2, icons, Landmark, Mountain, Send, Train } from 'lucide-react'
+import { ArrowDown, Gem, Globe2, icons, Landmark, Mountain, Send, Train } from 'lucide-react'
 import React from 'react'
 
 const suggestion = [
@@ -45,14 +46,26 @@ function Hero() {
         <div className='flex gap-5 justify-center'>
             {
                 suggestion.map((suggestion, index) => (
-                    <div key={index} className='flex items-center gap-2 border rounded-full p-2'>
+                    <div key={index} className='flex items-center gap-2 border rounded-full p-2 cursor-pointer 
+                    hover:bg-primary hover:text-white hover:items-white '>
                         {suggestion.icon}
                         <h2 className='text-xs'>{suggestion.title}</h2>
                     </div>
                 ))}
         </div>
 
+        <div className = 'flex items-center justify-center flex-col'>
+        <h2 className='my-7 mt-14 flex gap-2 text-center'>Not Sure where to start? <strong>See how it works</strong><ArrowDown/></h2>
+
         {/* Video Section */}
+        <HeroVideoDialog
+            className="block dark:hidden"
+            animationStyle="from-center"
+            videoSrc="https://www.example.com/dummy-video"
+            thumbnailSrc="https://mma.prnewswire.com/media/2401528/1_MindtripProduct. jpg?p=facebook"
+            thumbnailAlt="Dummy Video Thumbnail"
+        />
+        </div>
         </div>
     </div>
   )
