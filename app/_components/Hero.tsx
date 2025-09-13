@@ -62,7 +62,7 @@ function Hero() {
             className="block dark:hidden"
             animationStyle="from-center"
             videoSrc="https://www.example.com/dummy-video"
-            thumbnailSrc="https://mma.prnewswire.com/media/2401528/1_MindtripProduct. jpg?p=facebook"
+            thumbnailSrc="https://mma.prnewswire.com/media/2401528/1_MindtripProduct.jpg?p=facebook"
             thumbnailAlt="Dummy Video Thumbnail"
         />
         </div>

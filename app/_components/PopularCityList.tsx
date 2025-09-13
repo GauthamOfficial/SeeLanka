@@ -163,13 +163,13 @@ const data = [
   {
     category: "Northern Province",
     title: "Jaffna",
-    src: "https://plus.unsplash.com/premium_photo-1666254114402-cd16bc302aea?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2lnaXJpeWElMjByb2NrfGVufDB8fDB8fHww",
+    src: "/images/jaffna.jpg",
     content: <DummyContent />,
   },
   {
     category: "North Western Province",
     title: "Kurunegala",
-    src: "https://images.unsplash.com/photo-1531554694128-c4c6665f59c2?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "/images/kurunegala.jpg",
     content: <DummyContent />,
   },
   {
@@ -181,37 +181,37 @@ const data = [
   {
     category: "North Central Province",
     title: "Anuradhapura",
-    src: "https://images.unsplash.com/photo-1599202860130-f600f4948364?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "/images/anuradhapura.jpg",
     content: <DummyContent />,
   },
   {
     category: "Central Province",
     title: "Kandy",
-    src: "https://images.unsplash.com/photo-1602081957921-9137a5d6eaee?q=80&w=2793&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "/images/kandy.jpg",
     content: <DummyContent />,
   },
   {
     category: "Sabaragamuwa Province",
     title: "Ratnapura",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "/images/ratnapura.jpg",
     content: <DummyContent />,
   },
   {
     category: "Eastern Province",
     title: "Trincomalee",
-    src: "https://images.unsplash.com/photo-1599202860130-f600f4948364?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "/images/trincomalee.jpg",
     content: <DummyContent />,
   },
   {
     category: "Uva Province",
     title: "Badulla",
-    src: "https://images.unsplash.com/photo-1602081957921-9137a5d6eaee?q=80&w=2793&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "/images/badulla.jpg",
     content: <DummyContent />,
   },
   {
     category: "Southern Province",
     title: "Galle",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "/images/galle.jpg",
     content: <DummyContent />,
   }
 ];
