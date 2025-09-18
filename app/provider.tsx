@@ -1,12 +1,53 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from './_components/Header';
+import { useMutation } from 'convex/react';
+import { api } from '@/convex/_generated/api';
+import { useUser } from '@clerk/nextjs';
 
 function Provider({
      children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
+
+    const CreateUser = useMutation(api.user.CreateNewUser)
+
+    const { user } = useUser();
+
+    // const CreateNewUser = async () => {
+    //     if (user && user.primaryEmailAddress?.emailAddress && user.fullName && user.imageUrl) {
+    //         try {
+    //             //Save New User if not exists
+    //             const result = await CreateUser({
+    //                 email: user.primaryEmailAddress.emailAddress,
+    //                 imageUrl: user.imageUrl,
+    //                 name: user.fullName
+    //             })
+    //             console.log('User created/updated:', result);
+    //         } catch (error) {
+    //             console.error('Error creating user:', error);
+    //         }
+    //     }
+    // }
+
+    useEffect(() => {
+        if (user) {
+            CreateNewUser();
+        }
+    }, [user]);
+
+    const CreateNewUser = async () => {
+        if (user) {
+                const result = await CreateUser({
+                    email: user?.primaryEmailAddress?.emailAddress ??'',
+                    imageUrl: user?.imageUrl ?? '',
+                    name: user?.fullName ?? ''
+                });
+        }
+
+    }
+
+    return (
     <div>
         <Header/>
         {children}
